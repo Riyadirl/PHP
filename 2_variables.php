@@ -1,3 +1,10 @@
+<?php
+
+define('name', 'mahbub');
+//$name = 'yoshii';
+$age = 23;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,17 +12,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>variable</title>
 </head>
 
 <body>
-    <?php
-    echo 'hello <br/>';
-    echo date('y-m-d')
+    <h1> user profile page</h1>
 
-
-    ?>
-
+    <div><?php echo name;   ?></div>
+    <div><?php echo $age;    ?></div>
 </body>
 
 </html>
