@@ -3,6 +3,10 @@
 define('name', 'mahbub');
 //$name = 'yoshii';
 $age = 23;
+$txt = "Hello world!";
+$x = 5;
+$y = 10.5;
+
 ?>
 
 <!DOCTYPE html>
