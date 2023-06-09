@@ -10,9 +10,9 @@
 
 <body>
     <?php
-    echo 'hello <br/>';
-    echo date('y-m-d')
 
+    echo 'hello this is 1st php code <br/>';
+    echo date('y-m-d')
 
     ?>
 
