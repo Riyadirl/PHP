@@ -1,29 +1,46 @@
 <?php
 
-define('name', 'mahbub');
-//$name = 'yoshii';
-$age = 23;
-$txt = "Hello world!";
-$x = 5;
-$y = 10.5;
+//String:
+$name = "John";
 
-?>
+//Integer:
+$age = 30;
 
-<!DOCTYPE html>
-<html lang="en">
+//Float (Floating-point number):
+$price = 3.99;
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>variable</title>
-</head>
+//Boolean
+$isStudent = true;
 
-<body>
-    <h1> user profile page</h1>
+//Array
+$fruits = array("apple", "banana", "orange");
 
-    <div><?php echo name;   ?></div>
-    <div><?php echo $age;    ?></div>
-</body>
+//Object:
+class Person
+{
+    public $name;
+    public $age;
+}
+$person = new Person();
+$person->name = "John";
+$person->age = 30;
 
-</html>
+
+//Null:
+$x = null;
+
+//Resource (a special variable holding a reference to an external resource):
+$file = fopen("example.txt", "r");
+
+
+//Callable (a variable that can be used as a function):
+$func = function ($x, $y) {
+    return $x + $y;
+};
+
+//Closure (anonymous functions that can capture variables from their surrounding scope):
+$greeting = "Hello";
+$sayHello = function ($name) use ($greeting) {
+    echo $greeting . " " . $name;
+};
+$sayHello("John");  // Output: Hello John
