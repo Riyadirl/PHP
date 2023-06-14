@@ -1,7 +1,7 @@
 <?php
 
 // Including a file using include statement
-include 'header.php';
+include 'fileName.php';
 
 // Get the user input.
 $name = $_POST['name'];
