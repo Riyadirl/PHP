@@ -3,69 +3,87 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <style type="text/css">
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
-        .brand {
-            background-color: #cbb09c !important;
-        }
+    .brand {
+        background-color: #cbb09c !important;
+    }
 
-        .brand-text {
-            color: #cbb09c !important;
-        }
+    .brand-text {
+        color: #cbb09c !important;
+    }
 
-        h4 {
-            text-align: center;
-            color: #333;
-        }
+    h4 {
+        text-align: center;
+        color: #333;
+    }
 
-        form {
-            /* CSS styles for the form */
-            background-color: #f5f7fa;
-            padding: 20px;
-            border: 1px solid #e1e8ed;
-            border-radius: 4px;
-            width: 300px;
-            margin: 0 auto;
-        }
+    form {
+        /* CSS styles for the form */
+        background-color: #f5f7fa;
+        padding: 20px;
+        border: 1px solid #e1e8ed;
+        border-radius: 4px;
+        width: 300px;
+        margin: 0 auto;
+    }
 
-        form label {
-            /* CSS styles for form labels */
-            font-size: 15px;
-            font-weight: bold;
-            color: #333;
-        }
+    form label {
+        /* CSS styles for form labels */
+        font-size: 15px;
+        font-weight: bold;
+        color: #333;
+    }
 
-        form input[type="text"],
-        form input[type="email"] {
-            /* CSS styles for text and email inputs */
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            margin-bottom: 10px;
-            color: #555;
-        }
+    form input[type="text"],
+    form input[type="email"] {
+        /* CSS styles for text and email inputs */
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        color: #555;
+    }
 
-        form input[type="submit"] {
-            /* CSS styles for submit button */
-            text-align: center;
-            background-color: #ff4081;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            display: block;
-            margin: 0 auto;
-            width: 150px;
-            /* Adjust the width as needed */
-        }
+    form input[type="submit"] {
+        /* CSS styles for submit button */
+        text-align: center;
+        background-color: #ff4081;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        width: 150px;
+        /* Adjust the width as needed */
+    }
 
-        form input[type="submit"]:hover {
-            background-color: #ff6699;
-        }
+    form input[type="submit"]:hover {
+        background-color: #ff6699;
+    }
+
+    .deletebtn {
+        background-color: #ff0000;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+
+
+    .deletebtn:hover {
+        background-color: #ff3333;
+    }
+
+    .error-heading {
+        color: red;
+
+    }
     </style>
 </head>
 

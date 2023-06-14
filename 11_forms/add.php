@@ -8,6 +8,13 @@ if (isset($_GET['submit'])) {
 }*/
 
 
+//connect db from config folder
+
+include('./db_connect.php');
+
+
+
+
 $title = $email = $ingredients = '';
 $errors = array('email' => '', 'title' => '', 'ingredients' => '');
 
