@@ -1,16 +1,11 @@
 <?php
 
-//ternary operation
-$score = 50;
-//if ($score > 40) {
-//    echo 'high score';
-//} else {
-//    echo 'low score ';
-//}
+if (isset($_POST['submit'])) {
+    session_start();
 
-//$val = $score > 90 ? 'high' : 'low';
-//echo $val;
-
+    $_SESSION['name'] = $_POST['name'];
+    header('Location: index.php');
+}
 
 ?>
 
@@ -20,14 +15,45 @@ $score = 50;
 <html lang="en">
 
 <head>
+    <style>
+    /* Apply CSS to center the form and add colors */
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
 
-    <title>11</title>
+    form {
+        text-align: center;
+    }
+
+    input[type="text"],
+    input[type="submit"] {
+        padding: 10px;
+        border: none;
+        background-color: #f2f2f2;
+        color: #333;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: #fff;
+        cursor: pointer;
+    }
+    </style>
+    <title>namebox</title>
 </head>
 
 <body>
-    <h1>
-        <?php echo $score > 0 ? 'high' : 'low'; ?>
-    </h1>
+
+    <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
+        <input type="" name="name">
+        <input type="submit" name="submit" value="submit">
+    </form>
+
 </body>
 
 </html>

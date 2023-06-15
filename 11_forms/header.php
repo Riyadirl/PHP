@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+if ($_SERVER['QUERY_STRING'] == 'noname') {
+    session_unset();
+}
+
+$name = $_SESSION['name'];
+?>
+
+
 <head>
     <title>Pizza Guy</title>
     <!-- Compiled and minified CSS -->
@@ -100,6 +111,7 @@
         <div class="div.container">
             <a herf="#" class="brand-logo brand-text">Pizza Guy</a>
             <ul id="nav-mobile" class="right hide-on-small-and-down">
+                <li class="grey-text">Hello <?php echo htmlspecialchars($name) ?></li>
                 <li><a href="#" class="btn brand z-depth-0">add a pizza</a></li>
             </ul>
         </div>
