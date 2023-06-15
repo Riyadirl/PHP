@@ -56,22 +56,23 @@ mysqli_close($conn);
 
         <?php foreach ($pizzas as $pizza) : ?>
 
-            <div class="col s6 md3">
-                <div class="card z-depth-0">
-                    <div class="card-content center">
+        <div class="col s6 md3">
+            <div class="card z-depth-0">
+                <img src="./pizza.png" class="pizza">
+                <div class="card-content center">
 
-                        <h6><?php echo htmlspecialchars($pizza['title']); ?></h6>
-                        <ul>
-                            <?php foreach (explode(',', $pizza['ingredients']) as $ing) : ?>
-                                <li><?php echo htmlspecialchars($ing); ?></li>
-                            <?php endforeach ?>
-                        </ul>
-                    </div>
-                    <div class="card-action right-align">
-                        <a href="details.php?id=<?php echo $pizza['id'] ?>" class="brand-text">more info</a>
-                    </div>
+                    <h6><?php echo htmlspecialchars($pizza['title']); ?></h6>
+                    <ul>
+                        <?php foreach (explode(',', $pizza['ingredients']) as $ing) : ?>
+                        <li><?php echo htmlspecialchars($ing); ?></li>
+                        <?php endforeach ?>
+                    </ul>
+                </div>
+                <div class="card-action right-align">
+                    <a href="details.php?id=<?php echo $pizza['id'] ?>" class="brand-text">more info</a>
                 </div>
             </div>
+        </div>
         <?php endforeach; ?>
 
         <!-- <?php if (count($pizzas) >= 3) : ?>

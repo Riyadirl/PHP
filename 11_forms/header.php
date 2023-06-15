@@ -84,6 +84,14 @@
         color: red;
 
     }
+
+    .pizza {
+
+        margin: 40px auto -30px;
+        display: block;
+        position: relative;
+        top: -20px;
+    }
     </style>
 </head>
 

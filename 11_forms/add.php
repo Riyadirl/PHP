@@ -167,7 +167,6 @@ if (isset($_POST['submit'])) {
             <input type="text" name="ingredients" value="<?php echo htmlspecialchars($ingredients) ?>">
             <div class="red-text"><?php echo $errors['ingredients']; ?></div>
 
-
             <input type="submit" value="submit" name="submit">
 
         </form>
