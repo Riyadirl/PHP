@@ -2,10 +2,17 @@
 session_start();
 
 if ($_SERVER['QUERY_STRING'] == 'noname') {
-    session_unset();
+
+    //Null Coalescing
+    unset($_SESSION['name']);
 }
 
-$name = $_SESSION['name'];
+$name = $_SESSION['name'] ?? 'Guest';
+
+//get cookie
+$gender = $_COOKIE['gender'] ?? 'Unknown';
+
+
 ?>
 
 
@@ -112,6 +119,7 @@ $name = $_SESSION['name'];
             <a herf="#" class="brand-logo brand-text">Pizza Guy</a>
             <ul id="nav-mobile" class="right hide-on-small-and-down">
                 <li class="grey-text">Hello <?php echo htmlspecialchars($name) ?></li>
+                <li class="grey-text"> (<?php echo htmlspecialchars($gender) ?>)</li>
                 <li><a href="#" class="btn brand z-depth-0">add a pizza</a></li>
             </ul>
         </div>
