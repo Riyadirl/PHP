@@ -51,7 +51,7 @@ $errors = array('email' => '', 'title' => '', 'ingredients' => '');
     } //end of post check
 }
 
-
+//raw
 
     //21--- validation 2
     //check email
@@ -174,9 +174,6 @@ if (isset($_POST['submit'])) {
 
 
     <?php include('./footer.php'); ?>
-
-
-
 
 
 
